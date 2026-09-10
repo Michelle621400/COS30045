@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WattWise — Understand your appliance energy use</title>
+<title>WattWise — Home</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -13,16 +13,16 @@
 
 <header class="site-header">
   <div class="header-inner">
-    <button class="logo" id="logo-btn" aria-label="WattWise home">
+    <a href="index.html" class="logo" aria-label="WattWise home">
       <img src="C:\Users\User\Documents\GitHub\COS30045\PowerIcon.png" alt="" class="logo-mark">
       <span class="logo-text">WattWise</span>
-    </button>
+    </a>
 
     <nav class="main-nav" aria-label="Main">
       <ul>
-        <li><a href="#home" class="nav-link" data-page="home">Home</a></li>
-        <li><a href="#televisions" class="nav-link" data-page="televisions">Televisions</a></li>
-        <li><a href="#about" class="nav-link" data-page="about">About Us</a></li>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="televisions.html" class="nav-link">Televisions</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
       </ul>
     </nav>
   </div>
@@ -30,136 +30,47 @@
 
 <main>
 
-  <!-- HOME PAGE -->
-  <section id="home" class="page" data-title="WattWise — Home">
-    <div class="hero">
-      <div class="hero-text">
-        <h1>Power costs more than you think.</h1>
-        <p class="hero-sub">A plain-language guide to how much energy home appliances use, and what that means for an Australian electricity bill — starting with the television in your living room.</p>
-        <a href="#televisions" class="cta nav-link" data-page="televisions">See the TV energy guide</a>
-      </div>
-      <div class="hero-art" aria-hidden="true">
-        <svg viewBox="0 0 260 260" class="dial">
-          <circle cx="130" cy="130" r="110" class="dial-ring"/>
-          <path d="M130 130 L130 30 A100 100 0 0 1 205 165 Z" class="dial-fill"/>
-          <circle cx="130" cy="130" r="66" class="dial-hub"/>
-          <g class="dial-needle">
-            <line x1="130" y1="130" x2="130" y2="48"/>
-          </g>
-          <circle cx="130" cy="130" r="8" class="dial-pin"/>
-        </svg>
-      </div>
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Power costs more than you think.</h1>
+      <p class="hero-sub">A plain-language guide to how much energy home appliances use, and what that means for an Australian electricity bill — starting with the television in your living room.</p>
+      <a href="televisions.html" class="cta">See the TV energy guide</a>
     </div>
-
-    <div class="stat-row">
-      <div class="stat-card" style="--accent:#EBA746">
-        <p class="stat-num">100–400 kWh</p>
-        <p class="stat-label">typical yearly use for a household television</p>
-        <p class="stat-note">Example figures for illustration</p>
-      </div>
-      <div class="stat-card" style="--accent:#4C8C6B">
-        <p class="stat-num">1–6 stars</p>
-        <p class="stat-label">the range shown on Australian energy rating labels</p>
-        <p class="stat-note">Example figures for illustration</p>
-      </div>
-      <div class="stat-card" style="--accent:#A6522B">
-        <p class="stat-num">≈10%</p>
-        <p class="stat-label">of a bill that standby power can quietly add</p>
-        <p class="stat-note">Example figures for illustration</p>
-      </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 260 260" class="dial">
+        <circle cx="130" cy="130" r="110" class="dial-ring"/>
+        <path d="M130 130 L130 30 A100 100 0 0 1 205 165 Z" class="dial-fill"/>
+        <circle cx="130" cy="130" r="66" class="dial-hub"/>
+        <g class="dial-needle">
+          <line x1="130" y1="130" x2="130" y2="48"/>
+        </g>
+        <circle cx="130" cy="130" r="8" class="dial-pin"/>
+      </svg>
     </div>
+  </div>
 
-    <div class="info-block">
-      <h2>Why this matters in Australia</h2>
-      <p>Electricity prices and household energy use are a regular topic of conversation across Australian homes. Screen size, panel technology and how many hours a television runs each day all change how much it costs to own — not just to buy. This site walks through the basics using the television as a worked example, with sample figures you can compare against your own bill.</p>
+  <div class="stat-row">
+    <div class="stat-card" style="--accent:#EBA746">
+      <p class="stat-num">100–400 kWh</p>
+      <p class="stat-label">typical yearly use for a household television</p>
+      <p class="stat-note">Example figures for illustration</p>
     </div>
-  </section>
-
-  <!-- TELEVISIONS PAGE -->
-  <section id="televisions" class="page" data-title="WattWise — Televisions">
-    <h1>Comparing television energy use</h1>
-    <p class="page-intro">Bigger screens generally draw more power, but panel type and picture settings matter just as much. The table below uses sample figures to show how the numbers might compare across common screen sizes.</p>
-
-    <div class="table-wrap">
-      <table>
-        <caption>Sample television energy comparison (illustrative data)</caption>
-        <thead>
-          <tr>
-            <th scope="col">Screen size</th>
-            <th scope="col">Typical star rating</th>
-            <th scope="col">Estimated annual energy</th>
-            <th scope="col">Estimated annual cost*</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>32"</td>
-            <td>5 stars</td>
-            <td>90 kWh</td>
-            <td>$27</td>
-          </tr>
-          <tr>
-            <td>50"</td>
-            <td>4 stars</td>
-            <td>160 kWh</td>
-            <td>$48</td>
-          </tr>
-          <tr>
-            <td>65"</td>
-            <td>3.5 stars</td>
-            <td>230 kWh</td>
-            <td>$69</td>
-          </tr>
-          <tr>
-            <td>75"</td>
-            <td>3 stars</td>
-            <td>310 kWh</td>
-            <td>$93</td>
-          </tr>
-        </tbody>
-      </table>
-      <p class="table-footnote">*Estimated cost based on a placeholder rate of $0.30 per kWh. Sample data for illustration only — not sourced from a specific product.</p>
+    <div class="stat-card" style="--accent:#4C8C6B">
+      <p class="stat-num">1–6 stars</p>
+      <p class="stat-label">the range shown on Australian energy rating labels</p>
+      <p class="stat-note">Example figures for illustration</p>
     </div>
-
-    <div class="rating-example">
-      <h2>Reading a star rating</h2>
-      <p>A higher star rating means a television uses less energy for a similar picture size and performance. Here's a sample rating for the 65" example above:</p>
-      <div class="star-bar" role="img" aria-label="Sample rating of 3.5 out of 6 stars">
-        <span class="star full"></span>
-        <span class="star full"></span>
-        <span class="star full"></span>
-        <span class="star half"></span>
-        <span class="star"></span>
-        <span class="star"></span>
-      </div>
+    <div class="stat-card" style="--accent:#A6522B">
+      <p class="stat-num">≈10%</p>
+      <p class="stat-label">of a bill that standby power can quietly add</p>
+      <p class="stat-note">Example figures for illustration</p>
     </div>
+  </div>
 
-    <div class="tips">
-      <h2>Three placeholder tips</h2>
-      <ul>
-        <li>Turn off fully at the wall rather than leaving a television on standby overnight.</li>
-        <li>Match screen size to the room — a larger panel run at low brightness can still use less than a smaller one at full brightness.</li>
-        <li>Check the star rating label before buying; it's designed for side-by-side comparison.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- ABOUT PAGE -->
-  <section id="about" class="page" data-title="WattWise — About Us">
-    <h1>About this project</h1>
-    <p class="page-intro">WattWise is a small teaching example built to demonstrate a simple three-page website with JavaScript-driven navigation, using appliance energy consumption in the Australian market as its subject matter.</p>
-
-    <div class="about-grid">
-      <div class="about-card">
-        <h2>What's real, what's placeholder</h2>
-        <p>The layout, navigation and structure are the actual deliverable. The figures on the Televisions page are sample data included to show how content could be presented — they are not drawn from a specific retailer or product.</p>
-      </div>
-      <div class="about-card">
-        <h2>How it's built</h2>
-        <p>One shared HTML page holds all three sections; a small JavaScript file shows and hides them and updates the navigation to reflect the current page, so no reload is needed when moving between Home, Televisions and About Us.</p>
-      </div>
-    </div>
-  </section>
+  <div class="info-block">
+    <h2>Why this matters in Australia</h2>
+    <p>Electricity prices and household energy use are a regular topic of conversation across Australian homes. Screen size, panel technology and how many hours a television runs each day all change how much it costs to own — not just to buy. This site walks through the basics using the television as a worked example, with sample figures you can compare against your own bill.</p>
+  </div>
 
 </main>
 

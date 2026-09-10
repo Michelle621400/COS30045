@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WattWise — Televisions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo" aria-label="WattWise home">
+      <img src="C:\Users\User\Documents\GitHub\COS30045\PowerIcon.png" alt="" class="logo-mark">
+      <span class="logo-text">WattWise</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="televisions.html" class="nav-link">Televisions</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <h1>Comparing television energy use</h1>
+  <p class="page-intro">Bigger screens generally draw more power, but panel type and picture settings matter just as much. The table below uses sample figures to show how the numbers might compare across common screen sizes.</p>
+
+  <div class="table-wrap">
+    <table>
+      <caption>Sample television energy comparison (illustrative data)</caption>
+      <thead>
+        <tr>
+          <th scope="col">Screen size</th>
+          <th scope="col">Typical star rating</th>
+          <th scope="col">Estimated annual energy</th>
+          <th scope="col">Estimated annual cost*</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>32"</td>
+          <td>5 stars</td>
+          <td>90 kWh</td>
+          <td>$27</td>
+        </tr>
+        <tr>
+          <td>50"</td>
+          <td>4 stars</td>
+          <td>160 kWh</td>
+          <td>$48</td>
+        </tr>
+        <tr>
+          <td>65"</td>
+          <td>3.5 stars</td>
+          <td>230 kWh</td>
+          <td>$69</td>
+        </tr>
+        <tr>
+          <td>75"</td>
+          <td>3 stars</td>
+          <td>310 kWh</td>
+          <td>$93</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="table-footnote">*Estimated cost based on a placeholder rate of $0.30 per kWh. Sample data for illustration only — not sourced from a specific product.</p>
+  </div>
+
+  <div class="rating-example">
+    <h2>Reading a star rating</h2>
+    <p>A higher star rating means a television uses less energy for a similar picture size and performance. Here's a sample rating for the 65" example above:</p>
+    <div class="star-bar" role="img" aria-label="Sample rating of 3.5 out of 6 stars">
+      <span class="star full"></span>
+      <span class="star full"></span>
+      <span class="star full"></span>
+      <span class="star half"></span>
+      <span class="star"></span>
+      <span class="star"></span>
+    </div>
+  </div>
+
+  <div class="tips">
+    <h2>Three placeholder tips</h2>
+    <ul>
+      <li>Turn off fully at the wall rather than leaving a television on standby overnight.</li>
+      <li>Match screen size to the room — a larger panel run at low brightness can still use less than a smaller one at full brightness.</li>
+      <li>Check the star rating label before buying; it's designed for side-by-side comparison.</li>
+    </ul>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> [Your Name] — Content and code produced with the assistance of Claude (Anthropic).</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

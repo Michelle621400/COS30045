@@ -76,9 +76,7 @@ a { color: inherit; }
   display: flex;
   align-items: center;
   gap: 0.6rem;
-  background: none;
-  border: none;
-  cursor: pointer;
+  text-decoration: none;
   padding: 0.25rem;
   border-radius: 6px;
   transition: transform 0.15s ease;
@@ -132,9 +130,6 @@ main {
   margin: 0 auto;
   padding: 2.5rem 1.5rem 4rem;
 }
-
-.page { display: none; }
-.page.active { display: block; }
 
 .page-intro { max-width: 70ch; color: #3A4150; }
 
