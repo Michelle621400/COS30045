@@ -84,7 +84,7 @@ a { color: inherit; }
 
 .logo:hover { transform: translateY(-1px); }
 
-.logo-mark { width: 34px; height: 34px;  }
+.logo-mark { width: 34px; height: 34px; }
 
 .logo-text {
   font-family: var(--font-head);
