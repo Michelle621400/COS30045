@@ -30,70 +30,85 @@
 
 <main>
 
-  <h1>Comparing television energy use</h1>
-  <p class="page-intro">Bigger screens generally draw more power, but panel type and picture settings matter just as much. The table below uses sample figures to show how the numbers might compare across common screen sizes.</p>
+  <div class="insights">
+    <h2>Data insights from the ENERGY RATING registration dataset</h2>
+    <p class="page-intro">The charts below were built in KNIME from the television registration dataset, investigating eight questions about the Australian market.</p>
 
-  <div class="table-wrap">
-    <table>
-      <caption>Sample television energy comparison (illustrative data)</caption>
-      <thead>
-        <tr>
-          <th scope="col">Screen size</th>
-          <th scope="col">Typical star rating</th>
-          <th scope="col">Estimated annual energy</th>
-          <th scope="col">Estimated annual cost*</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>32"</td>
-          <td>5 stars</td>
-          <td>90 kWh</td>
-          <td>$27</td>
-        </tr>
-        <tr>
-          <td>50"</td>
-          <td>4 stars</td>
-          <td>160 kWh</td>
-          <td>$48</td>
-        </tr>
-        <tr>
-          <td>65"</td>
-          <td>3.5 stars</td>
-          <td>230 kWh</td>
-          <td>$69</td>
-        </tr>
-        <tr>
-          <td>75"</td>
-          <td>3 stars</td>
-          <td>310 kWh</td>
-          <td>$93</td>
-        </tr>
-      </tbody>
-    </table>
-    <p class="table-footnote">*Estimated cost based on a placeholder rate of $0.30 per kWh. Sample data for illustration only — not sourced from a specific product.</p>
-  </div>
+    <div class="chart-grid">
 
-  <div class="rating-example">
-    <h2>Reading a star rating</h2>
-    <p>A higher star rating means a television uses less energy for a similar picture size and performance. Here's a sample rating for the 65" example above:</p>
-    <div class="star-bar" role="img" aria-label="Sample rating of 3.5 out of 6 stars">
-      <span class="star full"></span>
-      <span class="star full"></span>
-      <span class="star full"></span>
-      <span class="star half"></span>
-      <span class="star"></span>
-      <span class="star"></span>
+      <figure class="chart-card">
+        <figcaption>
+          <h3>1. What screen technologies are available in Australia, and which are most frequent?</h3>
+          <p>Pie chart — count of models per screen technology.</p>
+        </figcaption>
+        <img src="Images/Q1 Pie Chart.png" alt="Pie chart of television count by screen technology" class="chart-image">
+      </figure>
+
+      <figure class="chart-card">
+        <figcaption>
+          <h3>1. What screen technologies are available in Australia, and which are most frequent?</h3>
+          <p>Bar chart — count of models per screen technology.</p>
+        </figcaption>
+        <img src="Images/Q1 Bar Chart.png" alt="Bar chart of television count by screen technology" class="chart-image">
+      </figure>
+
+      <figure class="chart-card">
+        <figcaption>
+          <h3>2. What screen sizes are available, and which are most frequent?</h3>
+          <p>Bar chart — count of models per screen size (inches).</p>
+        </figcaption>
+        <img src="Images/Q2 Bar Chart.png" alt="Bar chart of television count by screen size" class="chart-image">
+      </figure>
+
+      <figure class="chart-card">
+        <figcaption>
+          <h3>3. Which brands have the largest number of models?</h3>
+          <p>Bar chart — model count per registered brand.</p>
+        </figcaption>
+        <img src="Images/Q3 Bar Chart.png" alt="Bar chart of number of models per brand" class="chart-image">
+      </figure>
+
+      <figure class="chart-card">
+        <figcaption>
+          <h3>4. Which screen technology consumes the least power?</h3>
+          <p>Bar chart — median active-mode power per screen technology.</p>
+        </figcaption>
+        <img src="Images/Q4 Bar Chart.png" alt="Bar chart of median power use by screen technology" class="chart-image">
+      </figure>
+
+      <figure class="chart-card">
+        <figcaption>
+          <h3>5. What is the relationship between screen size and power use?</h3>
+          <p>Scatter plot — screen size (inches) vs. average mode power.</p>
+        </figcaption>
+        <img src="Images/Q5 Scatter Plot.png" alt="Scatter plot of screen size against power use" class="chart-image">
+      </figure>
+
+      <figure class="chart-card">
+        <figcaption>
+          <h3>6. What is the relationship between star rating and screen size?</h3>
+          <p>Scatter plot — screen size (inches) vs. star rating index.</p>
+        </figcaption>
+        <img src="Images/Q6 Scatter Plot.png" alt="Scatter plot of screen size against star rating" class="chart-image">
+      </figure>
+
+      <figure class="chart-card">
+        <figcaption>
+          <h3>7. Are there differences in power consumption between brands?</h3>
+          <p>Box plot — spread of average mode power per brand.</p>
+        </figcaption>
+        <img src="Images/Q7 Box Plot.png" alt="Box plot of power consumption by brand" class="chart-image">
+      </figure>
+
+      <figure class="chart-card">
+        <figcaption>
+          <h3>7. Are there differences in power consumption between brands?</h3>
+          <p>Bar chart — spread of average mode power per brand.</p>
+        </figcaption>
+        <img src="Images/Q7 Bar Chart.png" alt="Bar chart of market share by screen technology" class="chart-image">
+      </figure>
+
     </div>
-  </div>
-
-  <div class="tips">
-    <h2>Three placeholder tips</h2>
-    <ul>
-      <li>Turn off fully at the wall rather than leaving a television on standby overnight.</li>
-      <li>Match screen size to the room — a larger panel run at low brightness can still use less than a smaller one at full brightness.</li>
-      <li>Check the star rating label before buying; it's designed for side-by-side comparison.</li>
-    </ul>
   </div>
 
 </main>

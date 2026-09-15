@@ -25,3 +25,38 @@
     }
   });
 })();
+
+// Click-to-enlarge lightbox for chart images (only affects the
+// Televisions page, since only it has .chart-image elements)
+(function () {
+  const chartImages = document.querySelectorAll(".chart-image");
+  if (!chartImages.length) return;
+
+  const overlay = document.createElement("div");
+  overlay.className = "lightbox-overlay";
+  const bigImg = document.createElement("img");
+  bigImg.className = "lightbox-img";
+  overlay.appendChild(bigImg);
+  document.body.appendChild(overlay);
+
+  function openLightbox(src, alt) {
+    bigImg.src = src;
+    bigImg.alt = alt;
+    overlay.classList.add("open");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeLightbox() {
+    overlay.classList.remove("open");
+    document.body.style.overflow = "";
+  }
+
+  chartImages.forEach((img) => {
+    img.addEventListener("click", () => openLightbox(img.src, img.alt));
+  });
+
+  overlay.addEventListener("click", closeLightbox);
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") closeLightbox();
+  });
+})();
